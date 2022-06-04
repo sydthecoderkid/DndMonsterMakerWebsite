@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Title{
+  font-family: 'Times New Roman', Times, serif;
+  color: red;
+}
+
+.EnterName{
+  color: blue;
+}
+
+.uploadBox{
+  background-color: white;
+    position: relative;
+    left: 2vw;
+    font-size: medium;
+    top: -4vw;
+}
+
+.imageStyling{
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 120px;
+  right: 18vw; 
+  top: -7vw; 
+ }
+
+ .generatePDF{
+  padding: 0;
+  height: 5px;
+  position: relative;
+  left: 12vw;
+  top: 0vw; 
+  outline: none;
+  border: 2px solid #cdcdcd;
+  border-color: rgba(0,0,0,.15);
+  background-color: white;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  height: 100%;
+  width: 10%
+  }
