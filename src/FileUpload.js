@@ -11,8 +11,6 @@ import EnterName from './EnterName';
 
     function handleUpload(e){
         setFile(e.target.files[0]); 
-        url = e.target.files[0].name;
-        console.log(url) ;
          <div>
         
       </div>
@@ -21,11 +19,18 @@ import EnterName from './EnterName';
 
     function generatePDF(e){
         var doc = new jsPDF(); 
-        doc.setFontSize(40);
-        doc.text("" + MonsterStats.name, 25, 25);
+        doc.setFontSize(20);
+        doc.setFont('Courier New')
+        doc.text("Monster Name: " + MonsterStats.name, 35, 25);
+        doc.text("HP: " + MonsterStats.HP, 35, 50);
+        doc.text("Str: " + MonsterStats.Str, 35, 65);
+        doc.text("Dex: " + MonsterStats.Dex, 35, 80);
+        doc.text("Int: " + MonsterStats.Int, 35, 95);
+        doc.text("Wis: " + MonsterStats.Wis, 35, 110);
+        doc.text("Char: " + MonsterStats.Char, 35, 125);
         var img = new Image();
         img.src = URL.createObjectURL(file); 
-        doc.addImage(img, 'png', 10, 78, 12, 15)
+        doc.addImage(img, 'png', 80, 30, 130, 130)
         doc.save("monster.pdf");
         this.setState({value: e.target.value}); //This sets the state to the value entered
         MonsterStats.name = this.state.value; 
